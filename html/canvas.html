@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery-1.11.3.js"></script>
+<script>
+$(function(){
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+});
+</script>
+<body>
+<div>
+    <canvas  id="Canvas" width="200" height="100"
+             style="border:1px solid #FF0000;background-color: aqua" >
+    </canvas>
+</div>
+<div>
+    <canvas  id="myCanvas">
+    </canvas>
+</div>
+
+</body>
+</html>
